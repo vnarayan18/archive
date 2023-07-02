@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+void pc(float r, float a, float z) {
+    float x = r * cos(a);
+    float y = r * sin(a);
+    printf("( %f, %f, %f) ", x, y, z);
+}
+
+int main() {
+    float aa, ab, ac;
+    
+    printf("r? \n");
+    scanf("%f", &aa);
+    printf("a? \n");
+    scanf("%f", &ab);
+    printf("z? \n");
+    scanf("%f", &ac);
+    
+    pc(aa, ab, ac);
+    
+    return 0;
+}
